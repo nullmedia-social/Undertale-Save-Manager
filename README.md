@@ -24,7 +24,7 @@ The **Undertale Save Manager** allows you to manage your Undertale save files, c
 #### For Linux
 To install the **Undertale Save Manager** on Linux, follow these steps:
 
-1. Download the `install.sh` script from the repository or [download here](https://www.example.com/download/linux-install-script).
+1. Download the `install.sh` script from the repository.
    
 2. Open a terminal and navigate to the folder where you saved the `install.sh` file.
 
@@ -46,7 +46,7 @@ This will:
 #### For Windows
 To install the **Undertale Save Manager** on Windows, follow these steps:
 
-1. Download the `install-utsavemgr.ps1` script from the repository or [download here](https://www.example.com/download/windows-install-script).
+1. Download the `install-utsavemgr.ps1` script from the repository.
 
 2. Open PowerShell as Administrator and enable script execution if necessary:
    ```powershell
