@@ -12,10 +12,10 @@ mkdir -p "$INSTALL_DIR"
 
 # Download the necessary files
 echo "Downloading utsavemgr.jpeg..."
-curl -o "$INSTALL_DIR/utsavemgr.jpeg" "https://raw.githubusercontent.com/nullmedia-social/Undertale-Save-Manager/refs/heads/main/utsavemgr.jpeg"
+curl -o "$INSTALL_DIR/utsavemgr.jpeg" "https://raw.githubusercontent.com/nullmedia-social/Undertale-Save-Manager/refs/heads/main/linux/utsavemgr.jpeg"
 
 echo "Downloading utsavemgr.sh..."
-curl -o "$INSTALL_DIR/utsavemgr.sh" "https://raw.githubusercontent.com/nullmedia-social/Undertale-Save-Manager/refs/heads/main/utsavemgr.sh"
+curl -o "$INSTALL_DIR/utsavemgr.sh" "https://raw.githubusercontent.com/nullmedia-social/Undertale-Save-Manager/refs/heads/main/linux/utsavemgr.sh"
 
 # Download and create the desktop file
 echo "Creating utsavemgr.desktop..."
