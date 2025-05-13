@@ -1,86 +1,98 @@
-
 # Undertale Save Manager
 
-The **Undertale Save Manager** allows you to manage your Undertale save files, create backups, and load previous saves.
-
-### Features
-- Create new backup folders for your save files.
-- Copy the current save into an existing backup.
-- Load a backup and restore it to your game.
-- Delete a backup folder.
-- Open the save folder directly.
+The **Undertale Save Manager** lets you back up, restore, and organize your Undertale save files with ease.
 
 ---
 
-## Installation Instructions
+## 🔧 Features
+
+- 📦 Create new backup folders for your save files  
+- 🔁 Copy your current save into an existing backup  
+- ⏪ Load a backup into the game  
+- 🗑️ Delete unwanted backup folders  
+- 📂 Quickly open the save folder
+
+---
+
+## 💾 Installation Instructions
 
 ### Requirements
+
 - A Linux-based operating system (tested on Linux Mint) or Windows.
-- On Linux, `curl` should be installed to download files (usually pre-installed).
-- On Windows, PowerShell should be available (pre-installed in most versions).
+- On Linux, `curl` should be installed (usually pre-installed).
+- On Windows, PowerShell must be available (pre-installed in most versions).
 
-### 1. Download and Install the Manager
+---
 
-#### For Linux
-To install the **Undertale Save Manager** on Linux, follow these steps:
+### 🐧 For Linux
 
 1. Download the `install-linux.sh` script from the repository.
-   
-2. Open a terminal and navigate to the folder where you saved the `install-linux.sh` file.
+2. Open a terminal and navigate to where you saved `install-linux.sh`.
+3. Give the script execute permissions:
 
-3. Give the script executable permissions:
-   ```bash
-   chmod +x install-linux.sh
-   ```
+    ```bash
+    chmod +x install-linux.sh
+    ```
 
-4. Run the installation script:
-   ```bash
-   ./install-linux.sh
-   ```
+4. Run the installer:
+
+    ```bash
+    ./install-linux.sh
+    ```
 
 This will:
-- Download the `utsavemgr.sh` script and `utsavemgr.jpeg` image.
-- Place them in `/home/username/bin/utsavemgr/`.
-- Create a desktop shortcut `utsavemgr.desktop` on your desktop.
+- Download `utsavemgr.sh` and `utsavemgr.jpeg`
+- Place them in `/home/username/bin/utsavemgr/`
+- Create a desktop shortcut `utsavemgr.desktop`
 
-#### For Windows
-To install the **Undertale Save Manager** on Windows, follow these steps:
+---
+
+### 🪟 For Windows
 
 1. Download the `install-windows.ps1` script from the repository.
+2. Open **PowerShell as Administrator**.
+3. Enable script execution if needed:
 
-2. Open PowerShell as Administrator and enable script execution if necessary:
-   ```powershell
-   Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-   ```
+    ```powershell
+    Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+    ```
 
-3. Navigate to the folder where you saved the `install-windows.ps1` file in PowerShell.
+4. Unblock the script (Windows blocks downloaded files):
 
-4. Run the installation script:
-   ```powershell
-   .\install-windows.ps1
-   ```
+    ```powershell
+    Unblock-File -Path "C:\\Users\\YourUsername\\Downloads\\install-windows.ps1"
+    ```
+
+5. Run the installer:
+
+    ```powershell
+    & "C:\\Users\\YourUsername\\Downloads\\install-windows.ps1"
+    ```
 
 This will:
-- Download the `utsavemgr.ps1` script and `utsavemgr.jpeg` image.
-- Place them in `C:\Users\username\bin\utsavemgr\`.
-- Create a shortcut on your desktop to run the **Undertale Save Manager**.
+- Download `utsavemgr.ps1` and `utsavemgr.jpeg`
+- Place them in `C:\\Users\\YourUsername\\bin\\utsavemgr\\`
+- Create a desktop shortcut to run the **Undertale Save Manager**
 
-### 2. Running the Manager
-Once the installation is complete, you can access the **Undertale Save Manager**:
+---
 
-- **For Linux**: Click on the **Undertale Save Manager** icon on your desktop to start the application. A terminal window will open, displaying the available options to manage your Undertale save files.
-- **For Windows**: Double-click on the **Undertale Save Manager** shortcut on your desktop to run the manager.
+### ▶️ Running the Manager
 
-### 3. Usage Instructions
-When you run the **Undertale Save Manager**, you will be presented with the following options:
+- **Linux**: Double-click the desktop icon.
+- **Windows**: Double-click the desktop shortcut.
 
-- **Make new backup folder (and copy current save)**: Create a new backup folder and copy your current save to it.
-- **Copy current save into existing backup folder**: Copy the current save into an existing backup folder.
-- **Load a backup**: Choose a backup to load into your save folder.
-- **Delete a backup folder**: Remove an existing backup folder.
-- **Open save folder**: Open the folder where Undertale save files are stored.
-- **Exit**: Close the manager.
+A terminal/PowerShell window will open with the following menu options:
 
-### 4. Removing the Manager
-To uninstall **Undertale Save Manager**, simply delete the `utsavemgr` folder located in `/home/username/bin/` on Linux, or `C:\Users\username\bin\utsavemgr\` on Windows. You can also remove the desktop shortcut.
+- 📦 Make new backup folder (and copy current save)
+- 📤 Copy current save into existing backup folder
+- ⏪ Load a backup
+- 🗑️ Delete a backup folder
+- 📂 Open save folder
+- ❌ Exit
 
+---
+
+### ❌ Uninstalling
+
+- **Linux**: Delete the folder `/home/username/bin/utsavemgr/` and the desktop shortcut.
+- **Windows**: Delete the folder `C:\\Users\\YourUsername\\bin\\utsavemgr\\` and the desktop shortcut.
