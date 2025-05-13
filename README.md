@@ -60,13 +60,13 @@ This will:
 4. Unblock the script (Windows blocks downloaded files):
 
     ```powershell
-    Unblock-File -Path "C:\\Users\\YourUsername\\Downloads\\install-windows.ps1"
+    Unblock-File -Path "$env:USERPROFILE\Downloads\install-windows.ps1"
     ```
 
 5. Run the installer:
 
     ```powershell
-    & "C:\\Users\\YourUsername\\Downloads\\install-windows.ps1"
+    & "$env:USERPROFILE\Downloads\install-windows.ps1"
     ```
 
 This will:
