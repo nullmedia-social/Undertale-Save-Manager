@@ -22,7 +22,8 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/nullmedia-social/Under
 Write-Host "Creating shortcut on Desktop..."
 $Shell = New-Object -ComObject WScript.Shell
 $Shortcut = $Shell.CreateShortcut($DESKTOP_FILE)
-$Shortcut.TargetPath = "$INSTALL_DIR\utsavemgr.ps1"
+$Shortcut.TargetPath = "powershell.exe"
+$Shortcut.Arguments = "-ExecutionPolicy Bypass -File `"$INSTALL_DIR\utsavemgr.ps1`""
 $Shortcut.IconLocation = "$INSTALL_DIR\utsavemgr.ico"
 $Shortcut.Description = "Undertale Save Manager"
 $Shortcut.Save()
