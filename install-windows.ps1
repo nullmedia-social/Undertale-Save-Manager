@@ -4,7 +4,7 @@ $USER_NAME = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 # Set the directories (Windows paths)
 $INSTALL_DIR = "C:\Users\$USER_NAME\bin\utsavemgr"
 $DESKTOP_PATH = [System.Environment]::GetFolderPath('Desktop')
-$DESKTOP_FILE = "$DESKTOP_PATH\utsavemgr.lnk"  # Shortcut instead of .desktop file
+$DESKTOP_FILE = "$DESKTOP_PATH\Undertale Save Manager.lnk"  # Shortcut instead of .desktop file
 
 # Create the directory if it doesn't exist
 if (-not (Test-Path $INSTALL_DIR)) {
