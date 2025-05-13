@@ -1,14 +1,14 @@
-# Get the username of the current user
-$USER_NAME = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
+# Get the current user's profile directory
+$USER_PROFILE = $env:USERPROFILE
 
 # Set the directories (Windows paths)
-$INSTALL_DIR = "C:\Users\$USER_NAME\bin\utsavemgr"
+$INSTALL_DIR = "$USER_PROFILE\bin\utsavemgr"
 $DESKTOP_PATH = [System.Environment]::GetFolderPath('Desktop')
 $DESKTOP_FILE = "$DESKTOP_PATH\Undertale Save Manager.lnk"  # Shortcut instead of .desktop file
 
 # Create the directory if it doesn't exist
 if (-not (Test-Path $INSTALL_DIR)) {
-    New-Item -ItemType Directory -Path $INSTALL_DIR
+    New-Item -ItemType Directory -Path $INSTALL_DIR | Out-Null
 }
 
 # Download the necessary files from the Windows-specific path
