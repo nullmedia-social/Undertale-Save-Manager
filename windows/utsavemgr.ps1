@@ -1,5 +1,5 @@
 # CONFIG – updated path for Windows systems
-$SAVE_PATH = "$env:APPDATA\UNDERTALE"
+$SAVE_PATH = "$env:LOCALAPPDATA\UNDERTALE"
 $BACKUP_PATH = "$SAVE_PATH\backups"
 
 # Create backup folder if it doesn't exist
