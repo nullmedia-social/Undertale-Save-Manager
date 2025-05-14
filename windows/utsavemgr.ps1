@@ -89,6 +89,7 @@ while ($true) {
     Write-Host ""
     Write-Host "🧠 UNDERTALE SAVE MANAGER"
     Write-Host "=========================="
+    Write-Host "Please note that if you wish to sort your backups in a backup tree, so to speak, you may make a new backup folder and name it [first backup name]/[new backup name]. However, this has not been tested on Windows, so be aware of the risk of losing your save file."
     Write-Host "1. Make new backup folder (and copy current save)"
     Write-Host "2. Copy current save into existing backup folder"
     Write-Host "3. Load a backup (will first back up current save if necessary)"
